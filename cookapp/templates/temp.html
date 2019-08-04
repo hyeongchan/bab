@@ -1,0 +1,24 @@
+make success
+<br>
+<h1>post : </h1>
+{%for i in post.all%}
+<br>
+{{i.category}}, {{i.name}}
+{%endfor%}
+<br>
+<h1>overall</h1>
+{% for rec in all.all %}
+name : {{rec.name}}
+<br>
+ingr : {{rec.ingredients.all}}
+<br>
+{%endfor%}
+<h2>select!</h2>
+<br>
+<h1>recipe :</h1>
+{% for rec in recipe.all %}
+name : {{rec.name}}
+<br>
+ingr : {{rec.ingredients.all}}
+<br>
+{%endfor%}
